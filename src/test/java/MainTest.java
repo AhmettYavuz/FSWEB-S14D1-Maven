@@ -1,4 +1,4 @@
-import com.workintech.cylinder.Circle;
+import com.workintech.cylinder.circle;
 import com.workintech.cylinder.Cylinder;
 import com.workintech.developers.*;
 import com.workintech.pool.Cuboid;
@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(ResultAnalyzer.class)
 public class MainTest {
 
-    private Circle circle;
+    private com.workintech.cylinder.circle circle;
     private Cylinder cylinder;
     private Rectangle rectangle;
     private Cuboid cuboid;
@@ -31,7 +31,7 @@ public class MainTest {
 
     @BeforeEach
     void setUp() {
-        circle = new Circle(2);
+        circle = new circle(2);
         cylinder = new Cylinder(2,2);
         rectangle = new Rectangle(1,2);
         cuboid = new Cuboid(1, 2, 3);
@@ -71,7 +71,7 @@ public class MainTest {
     @DisplayName("Cylinder sınıfı ve değişkenleri doğru type a sahip mi ?")
     @Test
     public void testCylinderTypes() throws NoSuchFieldException {
-        assertThat(cylinder, instanceOf(Circle.class));
+        assertThat(cylinder, instanceOf(com.workintech.cylinder.circle.class));
         assertThat(cylinder.getHeight(), instanceOf(Number.class));
     }
 
