@@ -2,7 +2,7 @@ package com.workintech.cylinder;
 
 public class circle {
 
-    private final double radius;
+    private double radius;
 
     public circle(double radius) {
         if(radius<0){
@@ -18,6 +18,6 @@ public class circle {
     }
 
     public double getArea(){
-        return radius * radius * 3;
+        return Math.pow(radius,2) * Math.PI;
     }
 }

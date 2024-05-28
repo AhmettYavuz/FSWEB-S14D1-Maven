@@ -8,7 +8,7 @@ public class SeniorDeveloper extends Employee {
 
     @Override
     public void work(){
-        System.out.println("SeniorDeveloper");
+        System.out.println(getName() + "SeniorDeveloper");
         setSalary(300);
     }
 }
